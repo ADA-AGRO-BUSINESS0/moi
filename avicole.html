@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div class="container brand">
+            <img src="image/log.jpeg">
+            <div>
+                <h1>ADA AGRO-BUSINESS</h1>
+                <span>Etablissement TRAORE</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html">Accueil</a>
+            <a href="semence.html">Semences</a>
+            <a href="phytosanitaire.html">Phytosanitaires</a>
+            <a href="materiel.html">Matériels</a>
+            <a href="avicole.html">Avicoles</a>
+        </div>
+    </nav>
+
+    <section class="page-title">
+        <h2>Nos Matériels Avicoles</h2>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+                <div class="product-image">
+                    <img src="image/abreuvoirs.jpeg" alt="ABREUVOIRS">
+                </div>
+                <div class="product-info">
+                    <div class="category">Élevage</div>
+                    <h3>ABREUVOIRS</h3>
+                    <h4>Caractéristiques :</h4>
+                    <ul>
+                        <li>Disponible en 10 litres; 5 litres et 1,5 Litres</li>
+                    </ul>
+                                                                                <button class="whatsapp" onclick="order('ABREUVOIR')">Commander</button>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/déplumeuse.jpeg" alt="PLUMEUSE DE VOLAILLE">
+                </div>
+                <div class="product-info">
+                    <div class="category">Élevage</div>
+                    <h3>PLUMEUSE DE VOLAILLE</h3>
+                    <h4>Caractéristiques :</h4>
+                    <ul>
+                        <li>Un appareil professionnel pour la plumaison de tous types de volailles</li>
+                        <li>En raison de sa manipulation simple, il est parfaitement adapté à une utilisation dans l'agriculture ainsi que dans les exploitations agricoles </li>
+                    </ul>
+                                                                                <button class="whatsapp" onclick="order('PLUMEUSE DE VOLAILLE')">Commander</button>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/cage.jpeg" alt="CAGE DE TRANSPORT DE VOLAILLE">
+                </div>
+                <div class="product-info">
+                    <div class="category">Élevage</div>
+                    <h3>CAGE DE TRANSPORT DE VOLAILLE</h3>
+                    <h4>Caractéristiques :</h4>
+                    <ul>
+                        <li>Empilable pour optimiser l'espace</li>
+                        <li>Structure ajourée assurant une circulation d'air optimale pour le bien de l'animal </li>
+                        <li>Portes avec système de fermeture sécurisé (coulissant)</li>
+                        <li>C'est fait à base de plasitque robuste, facile à nettoyer et désinfecter</li>
+                    </ul>
+                                                            <button class="whatsapp" onclick="order('CAGE DE TRANSPORT DE VOLAILLE')">Commander</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+
+            function order(product) {
+                let phone = "221778784327";
+                window.open(
+                    "https://wa.me/" + phone + "?text=Bonjour je veux commander : " + product
+                );
+            }
+        </script>
+        </body>
+        </html>
